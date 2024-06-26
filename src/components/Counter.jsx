@@ -28,14 +28,18 @@ const Counter = () => {
     <div className="container mt-5">
       <div className="card text-center">
         <div className="card-header">
-          <h2 className="card-title">Compteur de Participants</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8igiNBTG7nTvx4-Kx3LYfohgy88JQSeCsZpF_Wn10HbnRSzUE87H5Mt9Z_rt0eNw5Bfo&usqp=CAU" alt="Logo Rennes" className="mb-3" />
+          <h2 className="card-title">Compteur officiel</h2>
+          <p>Utilisez le compteur officiel de la Mairie de Rennes qui vous permettra de compter les participants d'activités diverses (match, festival, vote, etc…).</p>
         </div>
         <div className="card-body">
           <h1 className="card-text display-4">{count}</h1>
+          <div role="group">
+            <button className="btn-reinitialiser" onClick={resetCount}>🔄 Remettre à 0</button>
+          </div>
           <div className="btn-group" role="group">
-            <button className="btn btn-success" onClick={incrementCount}>Incrémenter</button>
-            <button className="btn btn-warning" onClick={decrementCount}>Décrémenter</button>
-            <button className="btn btn-danger" onClick={resetCount}>Remettre à zéro</button>
+            <button className="btn" onClick={decrementCount}>-1</button>
+            <button className="btn" onClick={incrementCount}>+1</button>
           </div>
         </div>
       </div>
