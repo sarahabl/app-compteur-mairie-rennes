@@ -1,8 +1,10 @@
 // src/Counter.jsx
 import React, { useState } from 'react';
 
+// Composant Counter pour gérer le compteur de participants
 const Counter = () => {
-  // Déclaration d'une nouvelle variable d'état, que nous appellerons "count".
+
+  // Déclaration d'une nouvelle variable d'état, que nous appellons "count".
   const [count, setCount] = useState(0);
 
   // Fonction pour incrémenter le compteur
