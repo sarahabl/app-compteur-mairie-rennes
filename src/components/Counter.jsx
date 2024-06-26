@@ -25,13 +25,23 @@ const Counter = () => {
   };
 
   return (
-    <div>
-      <h1>Compteur: {count}</h1>
-      <button onClick={incrementCount}>Incrémenter</button>
-      <button onClick={decrementCount}>Décrémenter</button>
-      <button onClick={resetCount}>Remettre à zéro</button>
+    <div className="container mt-5">
+      <div className="card text-center">
+        <div className="card-header">
+          <h2 className="card-title">Compteur de Participants</h2>
+        </div>
+        <div className="card-body">
+          <h1 className="card-text display-4">{count}</h1>
+          <div className="btn-group" role="group">
+            <button className="btn btn-success" onClick={incrementCount}>Incrémenter</button>
+            <button className="btn btn-warning" onClick={decrementCount}>Décrémenter</button>
+            <button className="btn btn-danger" onClick={resetCount}>Remettre à zéro</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
+
 
 export default Counter;
